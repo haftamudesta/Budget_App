@@ -1,0 +1,55 @@
+<div dom_id expense>
+<div class ="list_new">
+<h1 class="list_expense">List of Expenses</h1>
+<%=link_to 'Create New Expense',new_expense_path, class:"new_expense"%>
+</div>
+<%=link_to expenses_path do%>
+    <button  class="month_btn">All</button>
+<% end %>
+
+
+<% @months.each do |month| %>
+    <%=link_to expenses_path(month: month) do%>
+        <button  class="month_btn"><%=month%></button>
+    <%end%>
+<% end %>
+<% if @expenses.empty?%>
+<h2>No expense available</h2>
+<% else%>
+<h3 class="totla_expense">Total Expenses (<%=@expenses.map(&:amount).sum%>)</h3>
+<% @expenses_by_day.each do |day,expense|%>
+    <div class="day_expense">
+    <h3><%=day%></h3>
+    <h3 class="daily_expense">Daily Expenses (<%=expense.map(&:amount).sum.round(2)%>)US$</h3>
+    </div>
+    <table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Category</th>
+<th>Amount</th>
+<th>Created At</th>
+<th colspan='3'>Actions</th>
+</tr>
+</thead>
+<tbody>
+<% @expenses.each do |expense|%>
+        <tr>
+        <td class="table_data"><%=expense.name%></td>
+        <td><%expense.categories.each do |category|%>
+            <%=category.name %>
+            <%end%>
+        </td>
+        <td><%=expense.amount%></td>
+        <td><%=expense.created_at.strftime("%A-%m-%B")%></td>
+        <td><%=link_to "View",expense, class:"view_btn" %></td>
+        <td><%=link_to "Edit",edit_expense_path(expense),class:"edit_btn"%></td>
+        <td><%=button_to "Delete",expense, method: :delete, class:"delete_btn_view"%></td>
+        </tr>
+    <%end%>    
+</tbody>
+</table>
+<%end%>
+
+<%end%>
+</div>

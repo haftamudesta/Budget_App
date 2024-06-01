@@ -1,0 +1,47 @@
+header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgb(112, 98, 112);
+        height: 60px;
+}
+
+h1 {
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+}
+
+nav ul{
+        display: flex;
+        gap: 60px;
+        list-style: none;
+}
+
+nav ul li{
+        font-size: 24px;
+        cursor: pointer;
+}
+
+.nav-link {
+        color: white;
+        text-decoration: none;
+
+}
+
+.sign-out {
+        font-size: 24px;
+        font-weight: 400;
+        outline: none;
+        border:none;
+        background: rgb(112, 98, 112);
+        cursor: pointer;
+}
+
+.sign-out:hover {
+        background: blue;
+        border-radius: 15%;
+        padding: 8px;
+        transition: ease-in-out;
+}
+

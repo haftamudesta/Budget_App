@@ -1,0 +1,24 @@
+<%= form_with model: category  do |form|%>
+        <%if @category.errors.any? %>
+        <% @category.errors.full_messages.each do |message|%>
+                <p><%=message%></p>
+        <%end%>
+        <%end%>
+       <div>
+       <%= form.label :name%><br>
+       <%= form.text_field :name%><br>
+       </div>
+       <div>
+       <%= form.label :icon%><br>
+        <%= form.text_field :icon%><br>
+       </div>
+       <div class="category_forms">
+       <div class="action_btn">
+        <div class="submit_btn">
+        <%=form.submit%>
+        </div>
+        <div>
+        <%= link_to "Back to expenses", categories_path,class:"link_btn" %>
+        </div>
+       </div>
+<%end%>

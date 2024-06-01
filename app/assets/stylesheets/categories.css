@@ -1,0 +1,50 @@
+.list_category {
+     color: black;
+     font-size: 40px;
+     font-weight: 400;
+     border-bottom: 2px solid gray;
+}
+
+.show__category {
+     margin: 24px 0 0 30%;
+}
+
+.category_detail {
+     color: rgb(151, 134, 134);
+     font-size: 40px;
+     font-weight: 700;
+     margin-bottom: 32px;
+}
+
+.category_strong,.totla__expense {
+     margin-bottom: 24px;
+}
+
+.category__name {
+     font-size: 16px;
+     font-weight: 400;
+     text-transform: uppercase;
+}
+
+.table_name {
+     background: blueviolet;
+}
+
+.link_btn-category {
+ text-decoration: none;
+  background: plum;
+  padding: 4px;
+  border-radius: 20px;
+  color: black;
+  margin-left: 20%;
+}
+
+.edit__category {
+     margin: 24px 0 0 30%;
+}
+
+.edit__title {
+     color: rgb(128, 113, 113);
+     margin-bottom: 24px;
+     font-weight: 400;
+}

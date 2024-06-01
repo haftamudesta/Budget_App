@@ -1,0 +1,77 @@
+.list_new {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 34px;
+}
+
+.list_expense {
+     color: black;
+     font-size: 40px;
+     font-weight: 400;
+     border-bottom: 2px solid gray;  
+}
+
+.new_expense {
+        text-decoration: none;
+        margin-right: 40px;
+        font-size: 24px;
+        font-weight: 400; 
+}
+
+.month_btn {
+        padding: 12px;
+        background: blue;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+}
+
+.totla_expense {
+        margin-bottom: 24px;
+        margin-top: 16px;
+        font-size: 24px;
+        font-weight: 700;
+}
+
+
+table {
+        width: 80%;
+        margin-bottom: 2rem;
+      }
+
+.table_data {
+        margin-left: 2rem;
+      }
+
+
+.day_expense {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        align-items: center;
+}
+
+.daily_expense {
+        margin-right: 280px;
+}
+
+.show__expense {
+        margin: 5%  0 0  30%;     
+}
+
+.expense_details {
+        color: rgb(126, 105, 105);
+        margin-bottom: 16px;
+}
+
+.name {
+        margin-bottom: 12px;
+        font-size: 24px;
+        font-weight: 700;
+}
+
+.form_control {    
+        margin-bottom: 16px;
+}
+
