@@ -23,8 +23,6 @@ class ExpensesController < ApplicationController
 
   def create
     @expense = Expense.new(expense_params)
-
-
     respond_to do |format|
       if @expense.save
         format.html { redirect_to expense_url(@expense), notice: 'expense was successfully created.' }
@@ -57,9 +55,6 @@ class ExpensesController < ApplicationController
       format.json { head :no_content }
     end
   end
-
-
-
 
   private
 
