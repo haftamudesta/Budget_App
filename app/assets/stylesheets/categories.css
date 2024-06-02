@@ -1,37 +1,38 @@
 .list_category {
-     color: black;
-     font-size: 40px;
-     font-weight: 400;
-     border-bottom: 2px solid gray;
+  color: black;
+  font-size: 40px;
+  font-weight: 400;
+  border-bottom: 2px solid gray;
 }
 
 .show__category {
-     margin: 24px 0 0 30%;
+  margin: 24px 0 0 30%;
 }
 
 .category_detail {
-     color: rgb(151, 134, 134);
-     font-size: 40px;
-     font-weight: 700;
-     margin-bottom: 32px;
+  color: rgb(151, 134, 134);
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 32px;
 }
 
-.category_strong,.totla__expense {
-     margin-bottom: 24px;
+.category_strong,
+.totla__expense {
+  margin-bottom: 24px;
 }
 
 .category__name {
-     font-size: 16px;
-     font-weight: 400;
-     text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .table_name {
-     background: blueviolet;
+  background: blueviolet;
 }
 
 .link_btn-category {
- text-decoration: none;
+  text-decoration: none;
   background: plum;
   padding: 4px;
   border-radius: 20px;
@@ -40,11 +41,30 @@
 }
 
 .edit__category {
-     margin: 24px 0 0 30%;
+  margin: 24px 0 0 30%;
 }
 
 .edit__title {
-     color: rgb(128, 113, 113);
-     margin-bottom: 24px;
-     font-weight: 400;
+  color: rgb(128, 113, 113);
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+.new_category {
+  text-decoration: none;
+  background: rgb(230, 91, 183);
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.create__new-category {
+  margin: 40px 40% 0 30%;
+  background: powderblue;
+  padding: 12px 12px 24px 60px;
+  z-index: 1;
+}
+
+.new__category-title {
+color: rgb(126, 103, 103);
+margin-bottom: 24px;
 }
