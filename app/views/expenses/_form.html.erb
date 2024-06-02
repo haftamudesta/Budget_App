@@ -1,0 +1,29 @@
+<%= form_with model: expense  do |form|%>
+        <%if @expense.errors.any? %>
+        <% @expense.errors.full_messages.each do |message|%>
+                <p><%=message%></p>
+        <%end%>
+        <%end%>
+       <div class="form_control">
+       <%= form.label :name%><br>
+       <%= form.text_field :name%><br>
+       </div>
+
+       <div class="form_control">
+       <%= form.label :category%><br>
+       <%= form.collection_select(:category_ids, Category.all, :id, :name,{}, multiple: true, size: Category.all.length )%><br>
+       </div>
+
+       <div class="form_control">
+       <%= form.label :amount%><br>
+        <%= form.text_field :amount%><br>
+       </div>
+       <div class="action_btn">
+        <div class="submit_btn">
+        <%=form.submit%>
+        </div>
+        <div>
+        <%= link_to "Back to expenses", expenses_path,class:"link_btn" %>
+        </div>
+       </div>
+<%end%>

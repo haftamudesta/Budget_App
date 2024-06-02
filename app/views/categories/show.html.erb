@@ -1,0 +1,29 @@
+<div class="show__category">
+<h1 class="category_detail">Category Details</h1>
+<p class="category_strong"><strong>Category Name: </strong><span class="category__name"><%=@category.name%></span></p>
+
+
+<div class="totla__expense">
+<%="Total expenses of  #{@category.name} category #{@category.total_expense_category} $US"%>
+</div>
+
+<table>
+      <tbody>
+        <% @category.expenses.order(created_at: :desc).each do |expense| %>
+            <tr>
+              <td class="table_name"><%= expense.name %></td>
+            </tr>
+            <tr>
+              <td class="fz-12"><%= expense.created_at.strftime("%A-%m-%B")  %></td>
+            </tr>
+            <tr>
+              <td class="fz-14"><%= "Total Payment    #{expense.amount} $US"  %></td>
+            </tr>
+          </tr>
+        <% end %>
+      </tbody>
+      </table>
+
+<%=link_to 'Back To Category',categories_path,class:"link_btn-category"%> 
+
+</div> 

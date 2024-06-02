@@ -1,0 +1,58 @@
+.sign_up {
+  margin-left: 40%;
+  position: fixed;
+  z-index: 100;
+  background: lemonchiffon;
+  padding: 12px 34px;
+}
+
+.field,
+.actions {
+  margin-bottom: 12px;
+}
+
+.Sign_in {
+  margin-left: 40%;
+  position: fixed;
+  z-index: 100;
+  background: lemonchiffon;
+  padding: 12px 34px;
+}
+
+.log__in-link {
+  margin-left: 10%;
+  text-decoration: none;
+}
+
+.sign__up-link {
+  text-decoration: none;
+  margin-left: 10%;
+}
+
+.forget_password {
+  text-decoration: none;
+  margin-top: 12px;
+  margin-left: 10%;
+}
+
+.forget__your-password {
+  margin-left: 40%;
+  position: fixed;
+  z-index: 100;
+  background: lemonchiffon;
+  padding: 12px 34px;
+}
+
+.align_log-in {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.edit_user {
+  margin-left: 10%;
+}
+
+.user_title {
+  margin: 24px 0 24px 10%;
+}

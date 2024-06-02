@@ -1,0 +1,10 @@
+<div class="show__expense">
+<h1 class="expense_details">Expense Details</h1>
+<p class="name"><strong>Name: </strong><%=@expense.name%></p>
+<p class="name"><strong>Amount: </strong><%=@expense.amount%></p>
+
+<div class="action_btn">
+<%=link_to 'Back',expenses_path,class:"link_btn"%>  
+<%=button_to "Delete",@expense, method: :delete, class:"delete_btn"%>
+</div>
+</div>

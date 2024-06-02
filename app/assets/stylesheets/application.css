@@ -13,3 +13,96 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 2px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+th {
+  background-color: #38dd17;
+}
+
+.action_btn {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 12px;
+}
+
+.link_btn {
+  text-decoration: none;
+  background: plum;
+  padding: 4px;
+  border-radius: 20px;
+  color: black;
+}
+
+.link_btn:hover {
+  color: blue;
+  background: rgb(212, 35, 35);
+  padding: 8px;
+}
+
+.delete_btn {
+  border: none;
+  background: red;
+  border-radius: 20px;
+  padding: 4px;
+  cursor: pointer;
+  color: rgb(29, 21, 21);
+}
+
+.delete_btn:hover {
+  color: blue;
+  background: rgb(212, 35, 35);
+  padding: 8px;
+}
+
+.submit_btn {
+  border: none;
+  background: blue;
+  border-radius: 20px;
+  padding: 4px;
+  cursor: pointer;
+  color: rgb(29, 21, 21);
+}
+
+.submit_btn:hover {
+  color: blue;
+  background: rgb(212, 35, 35);
+  padding: 8px;
+}
+
+.edit_btn {
+  text-decoration: none;
+  color: chocolate;
+}
+
+.view_btn {
+  text-decoration: none;
+  color: royalblue;
+}
+
+.delete_btn_view {
+  border: none;
+  outline: none;
+  color: red;
+  cursor: pointer;
+}
