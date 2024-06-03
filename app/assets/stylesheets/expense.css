@@ -17,6 +17,9 @@
   margin-right: 40px;
   font-size: 24px;
   font-weight: 400;
+  background: palevioletred;
+  border-radius: 30%;
+  padding: 8px;
 }
 
 .month_btn {
@@ -71,4 +74,13 @@ table {
 
 .form_control {
   margin-bottom: 16px;
+}
+
+.create_expense {
+  margin: 24px 0 0 30%;
+}
+
+.create_title {
+  color: rgb(158, 136, 136);
+  margin-bottom: 24px;
 }
