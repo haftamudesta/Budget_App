@@ -19,6 +19,7 @@
       <h2>No expense available</h2>
 <% else%>
     <h3 class="totla_expense">Total Expenses (<%=@expenses.map(&:amount).sum%>)</h3>
+
     <% @expenses_by_day.each do |day,expense|%>
     <div class="day_expense">
     <h3><%=day%></h3>
@@ -35,10 +36,12 @@
         </tr>
      </thead>
     <tbody>
-        <% @expenses.each do |expense|%>
+
+
+    <% @expenses.each do |expense|%>
         <tr>
           <td class="table_data"><%=expense.name%></td>
-          <td><%expense.categories.each do |category|%>
+          <td><% expense.categories.each do |category|%>
             <%=category.name %>
             <%end%>
            </td>
@@ -49,6 +52,10 @@
            <td><%=button_to "Delete",expense, method: :delete, class:"delete_btn_view"%></td>
         </tr>
        <%end%>    
+       
+
+
+
      </tbody>
     </table>
     <%end%>

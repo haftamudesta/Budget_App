@@ -12,7 +12,6 @@ class ExpensesController < ApplicationController
     @expenses_by_day = @expenses.order(created_at: :asc).group_by{|expence|
       expence.created_at.strftime('%A-%m-%B')}
   end
-
   def new
     @expense = Expense.new
     # @expense.user = current_user
