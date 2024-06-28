@@ -1,17 +1,19 @@
 class ExpensesController < ApplicationController
   before_action :set_expense, only: %i[show edit update destroy]
   def index
-     if params[:month]
-      @expenses =Expense.where('extract(month from created_at)=?',
-      Date::MONTHNAMES.index(params[:month]))
-      else
-        @expenses = Expense.all.where(author_id: current_user)
-      end
+    @expenses = if params[:month]
+                  Expense.where('extract(month from created_at)=?',
+                                Date::MONTHNAMES.index(params[:month]))
+                else
+                  Expense.all.where(author_id: current_user)
+                end
     @months = Date.today.all_year.map { |date| date.strftime('%B') }.uniq
     @expenses_by_month = @expenses.group_by { |expence| expence.created_at.strftime('%Y-%m') }
-    @expenses_by_day = @expenses.order(created_at: :asc).group_by{|expence|
-      expence.created_at.strftime('%A-%m-%B')}
+    @expenses_by_day = @expenses.order(created_at: :asc).group_by do |expence|
+      expence.created_at.strftime('%A-%m-%B')
+    end
   end
+
   def new
     @expense = Expense.new
     # @expense.user = current_user

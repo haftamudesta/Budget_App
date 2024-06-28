@@ -71,13 +71,14 @@ RSpec.configure do |config|
   config.include Devise::Test::IntegrationHelpers, type: :system
 
   Capybara.register_driver :chrome do |app|
-    Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)
+    Capybara::Selenium::Driver.new(app, browser: :chrome, options:)
   end
   Capybara.javascript_driver = :chrome
   Capybara.default_driver = :chrome
 
-  def options #do not open in mobile form=Setting the chrome window as maximised using Capybara
-    options=Selenium::WebDriver::Chrome::Options.new
+  # do not open in mobile form=Setting the chrome window as maximised using Capybara
+  def options
+    options = Selenium::WebDriver::Chrome::Options.new
     options.add_argument('--start-maximized')
     options
   end
