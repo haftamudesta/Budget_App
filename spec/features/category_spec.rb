@@ -10,7 +10,7 @@ RSpec.feature 'Categories', type: :feature do
         role: 'user'
       )
       sign_in(user)
-      sleep 1
+      sleep 2
     end
     it('Should visit Home page') do
       visit root_path

@@ -70,4 +70,5 @@ group :test do
 end
 gem 'cancancan'
 gem 'devise'
+gem 'faker'
 gem 'rubocop', '>= 1.0', '< 2.0'
