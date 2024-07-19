@@ -83,8 +83,8 @@ To get a local copy up and running, follow these steps.
 Clone this repository to your desired folder:
 
 ```sh
-  git clone git@github.com:haftamudesta/Recipe-App-Capstone.git
-  cd Recipe-App-Capstone
+  git clone https://github.com/haftamudesta/Budget_App
+  cd Budget_App
 ```
 
 ### Install
