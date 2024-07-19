@@ -9,9 +9,8 @@ class ExpensesController < ApplicationController
                 end
     @months = Date.today.all_year.map { |date| date.strftime('%B') }.uniq
     @expenses_by_month = @expenses.group_by { |expence| expence.created_at.strftime('%Y-%m') }
-    @expenses_by_day = @expenses.order(created_at: :asc).group_by do |expence|
-      expence.created_at.strftime('%A-%m-%B')
-    end
+    @expenses_by_day = @expenses.order(created_at: :asc).group_by { |expence|
+      expence.created_at.strftime('%A-%m-%B')}
   end
 
   def new

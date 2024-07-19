@@ -35,6 +35,7 @@ nav ul li {
   border: none;
   background: rgb(112, 98, 112);
   cursor: pointer;
+  margin-right: 4px;
 }
 
 .sign-out:hover {

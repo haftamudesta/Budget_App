@@ -1,3 +1,6 @@
+.main_expenses {
+  margin-left: 8px;
+}
 .list_new {
   display: flex;
   align-items: center;
@@ -24,7 +27,7 @@
 
 .month_btn {
   padding: 12px;
-  background: blue;
+  background: rgb(134, 134, 192);
   color: white;
   font-weight: 700;
   cursor: pointer;

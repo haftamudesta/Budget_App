@@ -4,6 +4,7 @@
   z-index: 100;
   background: lemonchiffon;
   padding: 12px 34px;
+  margin-top: 40px;
 }
 
 .field,
@@ -17,6 +18,7 @@
   z-index: 100;
   background: lemonchiffon;
   padding: 12px 34px;
+  margin-top: 40px;
 }
 
 .log__in-link {
